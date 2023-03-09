@@ -5,22 +5,37 @@
 
 /**
  * _strlen- returns the length of a string
- * @s: string to check lenght of
+ * @s: string to check length of
  *
  * Return: Always return length of string
  */
 int _strlen(char *s)
 {
-int l;
+	int l;
 
-l = 0;
-while (*s != '\0')
-	{
-	s++;
-	l++;
-	}
+	l = 0;
+	while (*(s + l) != '\0')
+		l++;
 
-return (l);
+	return (l);
+}
+
+/**
+ * _const_strlen- returns the length of a 
+ * constant string
+ * @s: string to check length of
+ *
+ * Return: Always return length of string
+ */
+int _const_strlen(const char *s)
+{
+	int l;
+
+	l = 0;
+	while (*(s + l) != '\0')
+		l++;
+
+	return (l);
 }
 
 #endif
