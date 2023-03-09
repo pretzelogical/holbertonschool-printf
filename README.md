@@ -16,3 +16,9 @@ _printf("Hello, int %i!", 98);
 - [ ] can print characters
 - [ ] can read in and recognise different formats
 - [ ] dynamically allocate memory (maybe)
+
+## Program flow
+---
+
+
+![printf-flow](printf-flow.png)
