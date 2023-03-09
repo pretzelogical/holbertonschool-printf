@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <stdarg.h>
 #include "_format_str_ch.h"
-#include <stdio.h> /* Remove this before the final version*/
+#include <stdio.h> /* Remove this before the final version */
 
 #define _PRINTF_BASE_BUFFER_SIZE 64
 
@@ -26,7 +26,7 @@ int _printf(const char *format, ...)
 	va_list args;
 	int formatLen;
 
-	formatLen = _strlen(format);
+	formatLen = _const_strlen(format);
 
 	
 }

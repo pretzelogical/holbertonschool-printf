@@ -11,3 +11,8 @@ _printf("Hello, char %c!", "a");
 _printf("Hello, int %i!", 98);
 // Output: Hello, int 98!
 ```
+### Project progress
+- [x] can print integers
+- [ ] can print characters
+- [ ] can read in and recognise different formats
+- [ ] dynamically allocate memory (maybe)
