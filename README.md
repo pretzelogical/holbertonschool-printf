@@ -1,5 +1,4 @@
 # holbertonschool-printf
-# PROJECT STATUS: INCOMPLETE
 This project contains the function _printf which will take a string
 with zero or more directives and a variable number of arguments.
 ## Examples
@@ -11,7 +10,8 @@ _printf("Hello, char %c!", "a");
 _printf("Hello, int %i!", 98);
 // Output: Hello, int 98!
 ```
-### Project progress
+## Project progress
+### PROJECT STATUS: INCOMPLETE
 - [x] can print integers
 - [ ] can print characters
 - [ ] can read in and recognise different formats

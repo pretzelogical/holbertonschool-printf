@@ -1,13 +1,10 @@
 #ifndef _PRINTF_H
 #define _PRINTF_H
 
-#include <unistd.h>
-#include <stdlib.h>
-#include <stdarg.h>
-#include "_format_str_ch.h"
+#include "main.h"
 #include <stdio.h> /* Remove this before the final version */
 
-#define _PRINTF_BASE_BUFFER_SIZE 64
+#define _PRINTF_BUFFER_SIZE 2048
 
 /**
  * _putchar - writes the character c to stdout
@@ -16,35 +13,78 @@
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-int _putchar(char c)
+int _putchar(int c)
 {
 	return (write(1, &c, 1));
 }
 
+/**
+ * _printf- writes a formatted character string
+ * to stdout
+ * @format: string with 0 or more directives
+ *
+ * Return: number of characters printed (minus null
+ * byte)
+*/
 int _printf(const char *format, ...)
 {
 	va_list args;
-	int formatLen;
+	char *out;
+	int length;
 
-	formatLen = _const_strlen(format);
+	out = (char *) malloc(_PRINTF_BUFFER_SIZE);
 
+	if (out == NULL)
+		return (0);
+	
+	length = _sprintf(out, format, args);
+	printf("%d\n", length);
+	printf("%s\n", out);
+
+	free(out);
+
+	return (0);
 	
 }
 
 /**
- * _print- Prints a string followed by
- * a newline to stdout;
+ * _sprintf- formats a string and copys it to the str
+ * buffer
+ * @str: buffer to copy to
+ * @format: string with zero or more directives
+ *
+ * Return: Number of characters in new string (minus null
+ * terminator)
+*/
+int _sprintf(char *str, const char *format, va_list args)
+{
+	int length;
+
+	printf("Made it to _sprintf!\n");
+
+	for (length = 0; *(format + length) != '\0'; length++)
+		str[length] = *(format + length);
+	
+	return (length);
+}
+
+/**
+ * _print- Prints a string to stdout.
  * @str: pointer to char array
  *
- * Return: Always return nothing (void)
+ * Return: number of characters printed
  */
-void _print(char *str)
+int _print(char *str)
 {
-	while (*str != '\0')
+	int printed;
+
+	printed = 0;
+	while (*(str + printed) != '\0')
 	{
-	_putchar(*str);
-	str++;
+	_putchar(*(str + printed));
+	printed++;
 	}
+	return (printed);
 }
 
 #endif

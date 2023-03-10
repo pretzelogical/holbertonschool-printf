@@ -1,7 +1,8 @@
 #ifndef _FORMAT_STR_CH_H
 #define _FORMAT_STR_CH_H
 
-#include "printf.h"
+#include "main.h"
+
 
 /**
  * _strlen- returns the length of a string
@@ -37,5 +38,7 @@ int _const_strlen(const char *s)
 
 	return (l);
 }
+
+
 
 #endif
