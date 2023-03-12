@@ -40,4 +40,3 @@ va_list ap;
 	va_end(ap);
 	return (k); 
 	}
-	
