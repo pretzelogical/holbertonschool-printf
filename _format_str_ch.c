@@ -1,6 +1,3 @@
-#ifndef _FORMAT_STR_CH_H
-#define _FORMAT_STR_CH_H
-
 #include "main.h"
 
 
@@ -38,7 +35,3 @@ int _const_strlen(const char *s)
 
 	return (l);
 }
-
-
-
-#endif

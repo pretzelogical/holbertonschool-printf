@@ -1,6 +1,3 @@
-#ifndef FORMAT_INT_H
-#define FORMAT_INT_H
-
 #include "main.h"
 
 /**
@@ -81,4 +78,4 @@ void putInt(int x)
 	return;
 }
 
-#endif
+

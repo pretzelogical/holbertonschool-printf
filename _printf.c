@@ -1,8 +1,4 @@
-#ifndef _PRINTF_H
-#define _PRINTF_H
-
 #include "main.h"
-#include <stdio.h> /* Remove this before the final version */
 
 #define _PRINTF_BUFFER_SIZE 2048
 
@@ -86,5 +82,3 @@ int _print(char *str)
 	}
 	return (printed);
 }
-
-#endif
