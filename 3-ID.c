@@ -1,6 +1,10 @@
 #include"main.h"
-/*
-*/int _numbers(va_list arg, int *k)
+/**
+ * Function @ _numbers
+ * Variable list @ va_list arg 
+ * Variable pointer @ int *k
+ */
+int _numbers(va_list arg, int *k)
 {
 	unsigned int i, p, r;
 /*

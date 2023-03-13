@@ -1,6 +1,10 @@
 #include "main.h"
-/*
-*/int _string(va_list p, int *k)
+/** 
+ * Function @ _string 
+ * Variable list @ va_slist p
+ * Variable pointer @ int *k
+*/
+int _string(va_list p, int *k)
 {
 	int i = 0;
 	char *s;
