@@ -1,10 +1,12 @@
  #include "main.h"
-/** 
- * Function _char
- * variable list @ va_list p
- * Variable pointer @ int *k
+ 
+/**
+ * _char- print characters
+ * @p: variable list
+ * @k: Variable pointer
+ * 
+ * Return: Always return 1
  */
-
 int _char(va_list p, int *k)
 {
 	int x = (char)va_arg(p, int);

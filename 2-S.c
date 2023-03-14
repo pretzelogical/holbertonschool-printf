@@ -1,8 +1,10 @@
 #include "main.h"
-/** 
- * Function @ _string 
- * Variable list @ va_slist p
- * Variable pointer @ int *k
+/**
+ * _string- print string
+ * @p: Variable list
+ * @k: Variable pointer
+ * 
+ * Return: characters printed
 */
 int _string(va_list p, int *k)
 {

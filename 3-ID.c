@@ -1,8 +1,10 @@
 #include"main.h"
 /**
- * Function @ _numbers
- * Variable list @ va_list arg 
- * Variable pointer @ int *k
+ * _numbers- print numbers
+ * @arg: Variable list
+ * @k: Variable pointer
+ *
+ * Return- num
  */
 int _numbers(va_list arg, int *k)
 {
