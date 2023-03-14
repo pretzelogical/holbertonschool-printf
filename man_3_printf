@@ -1,0 +1,17 @@
+.TH _printf 3 03-13-23 1.0
+.SH DESCRIPTION
+Takes a string with zero or more directives and a variable number of arguments and prints it to STDOUT.
+.SH CONVERSION SPECIFIERS
+A conversion specifier is a directive that represents a data type to converted into string form to be printed
+
+%c print a character
+%s print a string
+%i print an integer
+%d print a integer
+
+.SH RETURN VALUE
+When returned the function will give the number of characters printed (excluding the terminating null byte)
+
+.SH AUTHORS
+Wyatt Morris
+Sia Grimes

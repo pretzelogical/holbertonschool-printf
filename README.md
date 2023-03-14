@@ -13,7 +13,6 @@ _printf("Hello, int %i!", 98);
 ## Project progress
 ### PROJECT STATUS: INCOMPLETE
 - [x] can print integers
-- [ ] can print characters
-- [ ] can read in and recognise different formats
-- [ ] dynamically allocate memory (maybe)
+- [x] can print characters
+- [x] can read in and recognise different formats
 ---
