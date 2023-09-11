@@ -11,7 +11,7 @@ _printf("Hello, int %i!", 98);
 // Output: Hello, int 98!
 ```
 ## Project progress
-### PROJECT STATUS: INCOMPLETE
+### PROJECT STATUS: COMPLETE
 - [x] can print integers
 - [x] can print characters
 - [x] can read in and recognise different formats
